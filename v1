@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<head>
+
+<style>
+body{
+    max-height: 500px;
+    background:#bb9;
+}
+div{
+    margin:0 0;
+}
+.plate{
+  width:300px;
+  height:300px;
+  background:#FFF;
+    border-radius: 300px;
+    border:10px solid #FFF;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    z-index: 0;
+ 
+}
+.rink{
+  width:250px;
+  height:250px;
+  background:#f4f1f1; 
+ background:-webkit-radial-gradient(circle, #f4f1f1 60%, #c5c5c5);
+    background:-moz-radial-gradient(circle, #f4f1f1 60%, #c5c5c5);   
+    border-radius: 250px;
+    border: 2px solid transparent;
+    position: relative;
+    left: 134px;
+    top: -235px;
+    z-index: 1;
+}
+.eggwhite1{
+  width:90px;
+  height:90px;
+  background:#FFF;
+    border-radius: 90px;
+    position: relative;
+    left: 150px;
+    top: -450px;
+    z-index: 2;
+}
+.eggwhite2{
+  width:90px;
+  height:90px;
+  background:#FFF;
+    border-radius: 90px;
+    position: relative;
+    left: 175px;
+    top: -500px;
+    z-index: 2;
+}
+.yolk1{
+  width:50px;
+  height:50px;
+  background:#f9b532;
+    border-radius: 50px;
+    position: relative;
+    left: 175px;
+    top: -530px;
+    z-index: 3;
+}
+.yolk2{
+  width:50px;
+  height:50px;
+  background:#f9b532;
+    border-radius: 50px;
+    position: relative;
+    left: 200px;
+    top: -570px;
+    z-index: 3;
+}
+.yolkb1{
+  width:30px;
+  height:30px;
+  background:#f9d132;
+    border-radius: 30px;
+    position: relative;
+    left: 190px;
+    top: -570px;
+    z-index: 4;
+}
+.yolkb2{
+  width:30px;
+  height:30px;
+  background:#f9d132;
+    border-radius: 30px;
+    position: relative;
+    left: 207px;
+    top: -605px;
+    z-index: 4;
+}
+/*animation blink
+ @-webkit-keyframes blink{
+        from{background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e)}
+        to(background:white;)}
+    @-moz-keyframes blink{
+        from{background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e)
+        to(background:white;)}*/
+/*animation show*/
+     @-webkit-keyframes show{
+         {left:400px; top:50px;}
+         {left:250px; top: 50px;}
+     }
+ 
+    
+.sausagea{
+    animation-name: show;
+    animation-duration: 4s;
+    animation-time-function:linear;
+    animation-delay:2s;
+    animation-iteratioin-count: infinite;
+    animation-direction:reverse;
+} 
+.sausage1{
+    width:30px;
+    height:90px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+    position: relative;
+    left: 300px;
+    top: -800px;
+    z-index: 3;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+}
+.sausagehead1a{
+    width:30px;
+    height:30px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+    border-radius: 30px;
+     position: relative;
+    left: 285px;
+    top: -900px;
+    z-index: 2;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+} 
+.sausagehead1b{
+    width:30px;
+    height:30px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+    border-radius: 30px;
+     position: relative;
+    left: 315px;
+    top: -850px;
+    z-index: 2;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+}
+.sausage2{
+    width:30px;
+    height:90px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+     position: relative;
+    left: 280px;
+    top: -840px;
+    z-index: 3;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+}
+.sausagehead2b{
+    width:30px;
+    height:30px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+    border-radius: 30px;
+     position: relative;
+    left: 264px;
+    top: -974px;
+    z-index: 2;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+}
+.sausagehead2a{
+    width:30px;
+    height:30px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+    border-radius: 30px;
+     position: relative;
+    left: 296px;
+    top: -856px;
+    z-index: 2;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+}
+</style>
+</head>
+
+<body>
+<div class="plate"></div>
+<div class="rink"></div>
+<div class="egg1">
+    <div class="eggwhite1"></div>
+    <div class="yolk1"></div>
+    <div class="yolkb1"></div>
+</div>
+<div class="egg2">
+    <div class="eggwhite2"></div>
+    <div class="yolk2"></div>
+    <div class="yolkb2"></div>
+</div>
+<div class="sausagea">
+<div class="sausage1"></div>
+    <div class="sausagehead1a"></div>
+    <div class="sausagehead1b"></div>
+    </div>
+    <div>
+<div class="sausage2"></div>    
+    <div class="sausagehead2a"></div>
+    <div class="sausagehead2b"></div>
+        </div>
+</body>
