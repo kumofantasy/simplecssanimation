@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<style>
+body{
+    max-height: 500px;
+    background:#bb9;
+}
+div{
+    margin:0 0;
+}
+.plate{
+  width:300px;
+  height:300px;
+  background:#FFF;
+    border-radius: 300px;
+    border:10px solid #FFF;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    z-index: 0;
+}
+.shadow{
+  width:250px;
+  height:250px;
+  background:#f4f1f1; 
+ background:-webkit-radial-gradient(circle, #f4f1f1 60%, #c5c5c5);
+    background:-moz-radial-gradient(circle, #f4f1f1 60%, #c5c5c5);   
+    border-radius: 250px;
+    border: 2px solid transparent;
+    position: relative;
+    left: 134px;
+    top: -235px;
+    z-index: 1;
+}
+.eggwhite1{
+  width:90px;
+  height:90px;
+  background:#FFF;
+    border-radius: 90px;
+    position: relative;
+    left: 150px;
+    top: -450px;
+    z-index: 2;
+}
+.eggwhite2{
+  width:90px;
+  height:90px;
+  background:#FFF;
+    border-radius: 90px;
+    position: relative;
+    left: 175px;
+    top: -500px;
+    z-index: 2;
+}
+.yolk1{
+  width:50px;
+  height:50px;
+  background:#f9b532;
+    border-radius: 50px;
+    position: relative;
+    left: 175px;
+    top: -530px;
+    z-index: 3;
+}
+.yolk2{
+  width:50px;
+  height:50px;
+  background:#f9b532;
+    border-radius: 50px;
+    position: relative;
+    left: 200px;
+    top: -570px;
+    z-index: 3;
+}
+.yolkb1{
+  width:30px;
+  height:30px;
+  background:#f9d132;
+    border-radius: 30px;
+    position: relative;
+    left: 190px;
+    top: -570px;
+    z-index: 4;
+}
+.yolkb2{
+  width:30px;
+  height:30px;
+  background:#f9d132;
+    border-radius: 30px;
+    position: relative;
+    left: 207px;
+    top: -605px;
+    z-index: 4;
+}
+/*animation for the sausages to appear from right side of the frame*/
+     @-webkit-keyframes show{
+         from{left:500px;}
+     }
+     @-moz-keyframes show{
+         from{left:500px;}
+     }
+    
+.sausage1{
+    width:30px;
+    height:120px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+    border-radius: 30px;
+    position: relative;
+    left: 300px;
+    top: -800px;
+    z-index: 3;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+     /*animation show*/
+     -webkit-animation-name: show;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-time-function: linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-name: show;
+    -moz-animation-duration: 4s;
+    -moz-animation-time-function: linear;
+    -moz-animation-delay: 1s;
+    -moz-animation-iteration-count: 1;
+}    
+.sausage2{
+    width:30px;
+    height:120px;
+    background:#f2136c;
+    background:-webkit-linear-gradient(left, #f2136c 15%, #f0679e);
+    background:-moz-linear-gradient(left, #f2136c 15%, #f0679e);
+    border-radius: 30px;
+     position: relative;
+    left: 280px;
+    top: -840px;
+    z-index: 3;
+    transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+    /*animation show*/
+     -webkit-animation-name: show;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-time-function: linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-name: show;
+    -moz-animation-duration: 4s;
+    -moz-animation-time-function: linear;
+    -moz-animation-delay: 1s;
+    -moz-animation-iteration-count: 1;
+}
+     @-webkit-keyframes blink{
+         25% {color:#e966c9;}
+         50% {color:#f2136c;}
+         75% {color:#f9b532;}
+     }
+     @-moz-keyframes blink{
+         25% {color:#e966c9;}
+         50% {color:#f2136c;}
+         75% {color:#f9b532;}
+     }
+h2{
+    font-family: Lobster;
+    margin: 0 auto;
+    color: #959394;
+    padding: 5px;
+    font-size: 2em;
+    line-height: 1.2em;
+    position: relative;
+    left:50px;
+    top: -750px;
+    /*animation blink*/
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-time-function: linear;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: infinite;
+     -moz-animation-name: show;
+    -moz-animation-duration: 1s;
+    -moz-animation-time-function: linear;
+    -moz-animation-delay: 5s;
+    -moz-animation-iteration-count: infinite;
+}
+</style>
+</head>
+
+<body>
+<div class="plate"></div>
+<div class="shadow"></div>
+<div class="egg1">
+    <div class="eggwhite1"></div>
+    <div class="yolk1"></div>
+    <div class="yolkb1"></div>
+</div>
+<div class="egg2">
+    <div class="eggwhite2"></div>
+    <div class="yolk2"></div>
+    <div class="yolkb2"></div>
+</div>
+<div class="sausage">
+<div class="sausage1"></div>
+    <div>
+<div class="sausage2"></div> 
+        </div>
+        </div>
+<h2>Enjoy Your Yummy Breakfast Now!</h2>    
+</body>
